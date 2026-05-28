@@ -1,0 +1,16 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white; /* couleur du fond du header */
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+.image-div {
+  text-align: center;
+  font-size: 0.7em;     /* plus petit que le texte normal */
+  color: #666;          /* gris doux */
+  margin-top: 6px;      /* petit espace entre l’image et la légende */
+}

@@ -1,0 +1,27 @@
+img.reduced {
+  max-width: 500px;
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+.image-div {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+
+/* Make the content area wider */
+.wrapper {
+  max-width: 960px !important;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Optional: adjust the main content to scale with screen */
+.page-content {
+  width: 100%;
+}
