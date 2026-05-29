@@ -1,0 +1,34 @@
+# Site configuration
+title: Maïwen Demeulle
+description: Portfolio and research projects in Bioinformatics
+baseurl: ""
+url: "https://maideme.github.io"
+github_username: MaiDeme
+linkedin_username: maïwen-demeulle
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Exclude files
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - web_maiwen.zip
+  - _site
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
