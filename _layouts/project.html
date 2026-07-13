@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<!-- global template for project pages-->
+{% unless page.layout == "page" and page.permalink contains "/projects/" %}
+<header class="post-header">
+  <h1 class="post-title">{{ page.title }}</h1>
+</header>
+{% endunless %}
+
+{% assign project_title = page.title %}
+{% assign project_date = page.date %}
+{% assign project_description = page.description %}
+{% assign project_technologies = page.technologies %}
+{% assign project_links = page.links %}
+{% assign project_context = page.context %}
+{% assign project_content = page.content %}
+
+<div class="projects-container">
+  <div class="projects-main">
+      {% include project.html %}
+    </div>
+
+  {% include projects-sidebar.html %}
+</div>

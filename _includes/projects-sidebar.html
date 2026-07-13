@@ -1,0 +1,23 @@
+<!-- sidebar code -->
+
+
+
+<aside class="projects-sidebar">
+
+{% assign categories = site.projects | map: "category" | uniq %}
+
+{% for cat in categories %}
+  <h4>{{ cat }}</h4>
+  <ul>
+    {% assign projects_in_cat = site.projects | where: "category", cat | sort: "date" | reverse %}
+    {% for project in projects_in_cat %}
+      <li>
+        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        <small>({{ project.date | date: "%Y" }})</small>
+        {% if project.context %}<br><small class="project-context-tag">{{ project.context }}</small>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+</aside>

@@ -1,5 +1,4 @@
 .DS_Store
-web_maiwen.zip
 _site/
 .jekyll-cache/
 .jekyll-metadata
@@ -9,4 +8,12 @@ Gemfile.lock
 *~
 .sass-cache/
 .old_html/
+
+# Generated files (Jekyll builds these from markdown)
+about/index.html
+projects/index.html
+works/index.html
+index.html
+assets/main.css
+assets/main.css.map
 
